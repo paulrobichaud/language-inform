@@ -1,0 +1,69 @@
+'scopeName': 'source.inform'
+'fileTypes': [
+  'ni'
+]
+'name': 'Inform'
+'repository':
+  'command':
+    'patterns': [
+      {
+        'name' : 'keyword.control'
+        'begin': '\\['
+        'beginCaptures':
+          '0':
+            'name': 'keyword.control.begin.inform'
+        'end': '\\]'
+        'endCaptures':
+          '0':
+            'name': 'keyword.control.end.inform'
+      }
+    ]
+'patterns': [
+  {
+    'name': 'string.quoted.double.inform'
+    'begin': '"'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.inform'
+    'end': '"'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.inform'
+    'patterns': [
+      {
+        'include': '#command'
+      }
+    ]
+  }
+  {
+    'name': 'comment.block.inform'
+    'begin': '\\['
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.comment.begin.inform'
+    'end': '\\]'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.comment.end.inform'
+  }
+  {
+    'begin': '^Chapter\\s+'
+    'end': '$'
+    'name': 'entity.name.section.inform'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+  {
+    'begin': '^Section\\s+'
+    'end': '$'
+    'name': 'entity.name.section.inform'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+    ]
+  }
+]
