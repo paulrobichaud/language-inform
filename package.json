@@ -1,6 +1,6 @@
 {
   "name": "language-inform",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Inform package for Atom",
   "repository": "https://github.com/kumo/language-inform",
   "license": "MIT",
