@@ -1,5 +1,8 @@
-# language-infom
+Inform language support in Atom
+===============================
 
 Inform language grammar for GitHub's Atom IDE.
 
-![A screenshot of your spankin' package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+![Screenshot](https://cloud.githubusercontent.com/assets/7925/3794188/e00f503e-1ba8-11e4-82b5-af779ecde17b.png)
+
+Contributions are much appreciated. Please fork this repository and open a pull request to improve the grammar, add snippets, etc.
