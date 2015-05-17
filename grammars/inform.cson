@@ -1,6 +1,7 @@
 'scopeName': 'source.inform'
 'fileTypes': [
   'ni'
+  'i7x'
 ]
 'name': 'Inform'
 'repository':
